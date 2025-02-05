@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gmail_task</title>
+    <link rel="stylesheet" href="./gmail_task.css">
+</head>
+<body>
+    <center>
+        <div class="container">
+            <div id="g_division">
+                <div id="logo"></div>
+                <h1>Sign in</h1>
+                <p>to continue to Gmail</p>
+            </div>
+            <div id="form_division">
+                <form id="form_container">
+                        <input type="text" id="email" placeholder="Email or phone" required >
+                        <!-- <input type="text" id="password" placeholder="password" required > -->
+                    <div class="links">
+                        <a href="http//www.Forgot email?.com">Forgot email?</a>
+                    </div> 
+                    <div id="content">
+                        Not your computer? Use Guest mode to sign in privately. <a href="http//www.content.com">Learn more about <br>using Guest mode</a>
+                    </div>
+                    <div class="buttons">
+                        <a href="http//www.create-account.com" class="create-account">Create account</a>
+                        <a href="http//www.submit.com"><button type="submit" class="next" onclick="getCredentials()"> Next </button></a>
+                    </div>
+                    </form>
+            </div>
+        </div>
+        <div>
+            <footer>
+                <select>
+                    <option>English (United Kingdom)</option>
+                    <option>English (United States)</option>
+                    <option>Español</option>
+                </select>
+                <div>
+                    <a href="http//www.help.com">Help</a>
+                    <a href="http//www.Privacy.com">Privacy</a>
+                    <a href="http//www.Terms.com">Terms</a>
+                </div>
+            </footer>
+        </div>
+    </center>
+</body>
+<script>
+    const fs = require('fs');
+    function getCredentials(){ 
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        alert(`your email is ${email} and password is ${password}`);
+    }
+
+
+</script>
+</html>
